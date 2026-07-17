@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx server.ts",
     "build": "vite build",
-    "build:api": "npx esbuild api/_handler.ts --bundle --platform=node --target=node18 --format=esm --packages=external --outfile=api/index.js",
+    "build:api": "npx esbuild api/_handler.ts --bundle --platform=node --target=node18 --format=cjs --packages=external --outfile=api/index.js",
     "start": "node api/index.js",
     "clean": "rimraf dist db.json api/index.js",
     "lint": "tsc --noEmit"

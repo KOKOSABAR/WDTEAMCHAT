@@ -1,6 +1,3 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
-import app from "./_handler";
-
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  return app(req as any, res as any);
-}
+// This file is compiled to api/index.js by `npm run build:api`
+// Vercel uses the compiled api/index.js as the serverless function entry point.
+export { default } from "./_handler";
