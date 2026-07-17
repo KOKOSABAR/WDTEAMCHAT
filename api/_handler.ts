@@ -96,11 +96,16 @@ const saveDB = () => {
 
 // ─── Bootstrap DB ─────────────────────────────────────────────────────────────
 const initDB = async () => {
-  const ok = await loadFromSupabase();
-  if (!ok) loadLocalDB();
-  db.users = db.users.filter(u => !["sally","brown","cony","leonard"].includes(u.id));
-  db.users.forEach(u => { if (!u.role) u.role = "CS LINE"; });
-  saveDB();
+  try {
+    const ok = await loadFromSupabase();
+    if (!ok) loadLocalDB();
+    db.users = db.users.filter(u => !["sally","brown","cony","leonard"].includes(u.id));
+    db.users.forEach(u => { if (!u.role) u.role = "CS LINE"; });
+    // Only save back if we loaded something meaningful
+    if (db.users.length > 0 || db.chats.length > 0) saveDB();
+  } catch (e) {
+    console.error("initDB error (non-fatal):", e);
+  }
 };
 initDB();
 

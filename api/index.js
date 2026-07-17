@@ -576,3 +576,8 @@ var handler_default = app;
 if (typeof module.exports === "object" && module.exports.default) {
   module.exports = module.exports.default;
 }
+
+// Vercel requires module.exports to be the handler function directly
+if (typeof module.exports === "object" && module.exports.default) {
+  module.exports = module.exports.default;
+}
