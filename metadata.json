@@ -1,0 +1,6 @@
+{
+  "name": "Real-time Chat Dashboard",
+  "description": "A feature-rich real-time chat dashboard with support for one-on-one chats, group chats, group management, read receipts, online status, message search, and media attachments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

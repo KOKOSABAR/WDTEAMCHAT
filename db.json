@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "faisal",
+      "username": "faisalsabaryanto",
+      "email": "faisalsabaryanto44@gmail.com",
+      "name": "Faisal Sabaryanto",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "isOnline": true,
+      "lastSeen": "2026-07-16T19:50:57.259Z",
+      "statusMessage": "Line Dashboard is Awesome! ⚡",
+      "role": "CS LINE",
+      "password": "@Aa291217@"
+    }
+  ],
+  "chats": [],
+  "messages": []
+}
